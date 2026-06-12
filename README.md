@@ -2,6 +2,13 @@
 
 Standalone weather-data project for Baku, Azerbaijan. It includes a weather dataset, a data-generation script that can fetch archive weather data from Open-Meteo, and an interactive daily weather graph.
 
+# Links
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MegrurNiftiyev/baku_weather_analytics)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/megrurniftiyev/baku-hourly-weather-data-2015-2025/data)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/datasets/MegrurNiftiyev/baku_hourly_weather_2015_2025)
+
+
+
 ## Project Structure
 
 ```text
@@ -16,13 +23,13 @@ baku_hourly_weather_2015_2025/
 |   |-- baku_autumn_variable_2018-11-09.png
 |   |-- baku_spring_variable_2017-05-15.png
 |   |-- baku_summer_variable_2024-07-02.png
-|   |-- baku_weather_2025-01-13.png
 |   `-- baku_winter_variable_2021-12-25.png
 `-- src/
     |-- generate_weather_data.py
     `-- visualize_weather_graph.py
 
 ```
+## Figures
 
 Saved figures are written to `figures/`.
 
@@ -31,10 +38,10 @@ Saved figures are written to `figures/`.
 
 Four colorful daily examples with frequent weather and wind changes:
 
-| Winter - Mixed | Spring - Mixed |
+| Winter | Spring |
 | --- | --- |
 | ![Winter mixed weather chart](figures/baku_winter_variable_2021-12-25.png) | ![Spring mixed weather chart](figures/baku_spring_variable_2017-05-15.png) |
-| Summer - Mixed | Autumn - Mixed |
+| Summer | Autumn |
 | ![Summer mixed weather chart](figures/baku_summer_variable_2024-07-02.png) | ![Autumn mixed weather chart](figures/baku_autumn_variable_2018-11-09.png) |
 
 
@@ -87,33 +94,18 @@ The graph opens an interactive Matplotlib window with:
 * date input
 * save button
 
-## Setup
+
+## Installation
 
 ```bash
+git clone https://github.com/MegrurNiftiyev/baku_weather_analytics.git
+cd baku_weather_analytics
 pip install -r requirements.txt
-
-```
-
-## Generate Weather Data
-
-```bash
 python src/generate_weather_data.py
-
-```
-
-This writes a fresh CSV to:
-
-```text
-data/baku_weather_hourly_data.csv
-
-```
-
-## Visualize Weather Data
-
-```bash
 python src/visualize_weather_graph.py
-
 ```
+
+The data-generation command writes a fresh CSV to `data/baku_weather_hourly_data.csv`.
 
 
 ## Data Source
