@@ -1,3 +1,22 @@
+---
+license: mit
+task_categories:
+- time-series-forecasting
+- data-visualization
+tags:
+- weather
+- baku
+- climate
+size_categories:
+- 10k-100k
+pretty_name: Baku Hourly Weather Data (2015-2025)
+configs:
+- caption_config: default
+  data_files:
+  - split: train
+    path: data/baku_weather_hourly_data.csv
+---
+
 # Baku Yearly Weather Graph
 
 Standalone weather-data project for Baku, Azerbaijan. It includes a weather dataset, a data-generation script that can fetch archive weather data from Open-Meteo, and an interactive daily weather graph.
@@ -21,6 +40,7 @@ baku_hourly_weather_2015_2025/
 `-- src/
     |-- generate_weather_data.py
     `-- visualize_weather_graph.py
+
 ```
 
 ## Dataset
@@ -29,17 +49,17 @@ Included dataset: `data/baku_weather_hourly_data.csv`
 
 Columns:
 
-- `time_bin`: timestamp for the weather record
-- `temperature`: temperature in Celsius
-- `weather_code`: Open-Meteo WMO weather code
-- `wind_speed`: wind speed in m/s
+* `time_bin`: timestamp for the weather record
+* `temperature`: temperature in Celsius
+* `weather_code`: Open-Meteo WMO weather code
+* `wind_speed`: wind speed in m/s
 
 The dataset is generated for the `2015-01-01` to `2025-12-31` period, with one record per hour across each full day. The generator script defaults to this same range; adjust `START_DATE` and `END_DATE` in `src/generate_weather_data.py` if you need a different period.
 
 CSV format:
 
 | time_bin | temperature | weather_code | wind_speed |
-| --- | ---: | ---: | ---: |
+| --- | --- | --- | --- |
 | 2015-01-01 00:00:00 | 5.4 | 3 | 27.2 |
 | 2015-01-01 01:00:00 | 5.3 | 3 | 25.8 |
 | 2015-01-01 02:00:00 | 5.1 | 3 | 27.1 |
@@ -64,39 +84,44 @@ Weather code categories used in the visualization:
 
 ```bash
 pip install -r requirements.txt
+
 ```
 
 ## Generate Weather Data
 
 ```bash
 python src/generate_weather_data.py
+
 ```
 
 This writes a fresh CSV to:
 
 ```text
 data/baku_weather_hourly_data.csv
+
 ```
 
 ## Visualize Weather Data
 
 ```bash
 python src/visualize_weather_graph.py
+
 ```
 
 The graph opens an interactive Matplotlib window with:
 
-- temperature chart
-- wind speed chart
-- weather category labels
-- daily and full-dataset category counts
-- previous/next date buttons
-- date input
-- save button
+* temperature chart
+* wind speed chart
+* weather category labels
+* daily and full-dataset category counts
+* previous/next date buttons
+* date input
+* save button
 
 Saved figures are written to `figures/`.
 
 ## Generated Figures
+
 
 Four colorful daily examples with frequent weather and wind changes:
 
@@ -113,3 +138,7 @@ Default start date example:
 ## Data Source
 
 Weather data is fetched from the Open-Meteo Archive API using Baku coordinates.
+
+```
+
+```
