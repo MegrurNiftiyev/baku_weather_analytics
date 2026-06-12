@@ -5,17 +5,22 @@ Standalone weather-data project for Baku, Azerbaijan. It includes a weather data
 ## Project Structure
 
 ```text
-baku_yearly_weather_graph/
-|-- data/
-|   `-- baku_weather_hourly_data.csv
-|-- reports/
-|   `-- figures/
-|-- src/
-|   |-- generate_weather_data.py
-|   `-- visualize_weather_graph.py
+baku_hourly_weather_2015_2025/
+|-- .gitattributes
 |-- .gitignore
 |-- README.md
-`-- requirements.txt
+|-- requirements.txt
+|-- data/
+|   `-- baku_weather_hourly_data.csv
+|-- figures/
+|   |-- baku_autumn_variable_2018-11-09.png
+|   |-- baku_spring_variable_2017-05-15.png
+|   |-- baku_summer_variable_2024-07-02.png
+|   |-- baku_weather_2025-01-13.png
+|   `-- baku_winter_variable_2021-12-25.png
+`-- src/
+    |-- generate_weather_data.py
+    `-- visualize_weather_graph.py
 ```
 
 ## Dataset
@@ -89,7 +94,7 @@ The graph opens an interactive Matplotlib window with:
 - date input
 - save button
 
-Saved figures are written to `reports/figures/`.
+Saved figures are written to `figures/`.
 
 ## Generated Figures
 
@@ -97,13 +102,13 @@ Four colorful daily examples with frequent weather and wind changes:
 
 | Winter - Mixed | Spring - Mixed |
 | --- | --- |
-| ![Winter mixed weather chart](reports/figures/baku_winter_variable_2021-12-25.png) | ![Spring mixed weather chart](reports/figures/baku_spring_variable_2017-05-15.png) |
+| ![Winter mixed weather chart](figures/baku_winter_variable_2021-12-25.png) | ![Spring mixed weather chart](figures/baku_spring_variable_2017-05-15.png) |
 | Summer - Mixed | Autumn - Mixed |
-| ![Summer mixed weather chart](reports/figures/baku_summer_variable_2024-07-02.png) | ![Autumn mixed weather chart](reports/figures/baku_autumn_variable_2018-11-09.png) |
+| ![Summer mixed weather chart](figures/baku_summer_variable_2024-07-02.png) | ![Autumn mixed weather chart](figures/baku_autumn_variable_2018-11-09.png) |
 
 Default start date example:
 
-![Default start date weather chart](reports/figures/baku_weather_2025-01-13.png)
+![Default start date weather chart](figures/baku_weather_2025-01-13.png)
 
 ## Data Source
 

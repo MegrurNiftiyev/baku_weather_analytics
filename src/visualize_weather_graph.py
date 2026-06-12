@@ -116,7 +116,7 @@ def visualize_daily_weather(
         parsed_target = parsed_target.normalize()
 
     current_index = available_dates.index(parsed_target)
-    output_dir = Path(__file__).resolve().parents[1] / "reports" / "figures"
+    output_dir = Path(__file__).resolve().parents[1] / "figures"
     output_dir.mkdir(parents=True, exist_ok=True)
 
     all_category_counts = df["weather_code"].apply(weather_code_to_category).value_counts()
