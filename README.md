@@ -38,12 +38,30 @@ Saved figures are written to `figures/`.
 
 Four colorful daily examples with frequent weather and wind changes:
 
-| Winter | Spring |
-| --- | --- |
-| ![Winter mixed weather chart](figures/baku_winter_variable_2021-12-25.png) | ![Spring mixed weather chart](figures/baku_spring_variable_2017-05-15.png) |
-| Summer | Autumn |
-| ![Summer mixed weather chart](figures/baku_summer_variable_2024-07-02.png) | ![Autumn mixed weather chart](figures/baku_autumn_variable_2018-11-09.png) |
-
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <strong>Winter</strong><br>
+        <img src="https://raw.githubusercontent.com/MegrurNiftiyev/baku_weather_analytics/main/figures/baku_winter_variable_2021-12-25.png" alt="Winter mixed weather chart" width="420">
+      </td>
+      <td align="center">
+        <strong>Spring</strong><br>
+        <img src="https://raw.githubusercontent.com/MegrurNiftiyev/baku_weather_analytics/main/figures/baku_spring_variable_2017-05-15.png" alt="Spring mixed weather chart" width="420">
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <strong>Summer</strong><br>
+        <img src="https://raw.githubusercontent.com/MegrurNiftiyev/baku_weather_analytics/main/figures/baku_summer_variable_2024-07-02.png" alt="Summer mixed weather chart" width="420">
+      </td>
+      <td align="center">
+        <strong>Autumn</strong><br>
+        <img src="https://raw.githubusercontent.com/MegrurNiftiyev/baku_weather_analytics/main/figures/baku_autumn_variable_2018-11-09.png" alt="Autumn mixed weather chart" width="420">
+      </td>
+    </tr>
+  </table>
+</div>
 
 
 ## Dataset
