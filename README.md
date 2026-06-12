@@ -1,21 +1,3 @@
----
-license: mit
-task_categories:
-- time-series-forecasting
-tags:
-- weather
-- baku
-- climate
-size_categories:
-- 10k-100k
-pretty_name: Baku Hourly Weather Data (2015-2025)
-configs:
-- config_name: default
-  data_files:
-  - split: train
-    path: data/baku_weather_hourly_data.csv
----
-
 # Baku Yearly Weather Graph
 
 Standalone weather-data project for Baku, Azerbaijan. It includes a weather dataset, a data-generation script that can fetch archive weather data from Open-Meteo, and an interactive daily weather graph.
@@ -41,6 +23,21 @@ baku_hourly_weather_2015_2025/
     `-- visualize_weather_graph.py
 
 ```
+
+Saved figures are written to `figures/`.
+
+## Generated Figures
+
+
+Four colorful daily examples with frequent weather and wind changes:
+
+| Winter - Mixed | Spring - Mixed |
+| --- | --- |
+| ![Winter mixed weather chart](figures/baku_winter_variable_2021-12-25.png) | ![Spring mixed weather chart](figures/baku_spring_variable_2017-05-15.png) |
+| Summer - Mixed | Autumn - Mixed |
+| ![Summer mixed weather chart](figures/baku_summer_variable_2024-07-02.png) | ![Autumn mixed weather chart](figures/baku_autumn_variable_2018-11-09.png) |
+
+
 
 ## Dataset
 
@@ -79,6 +76,17 @@ Weather code categories used in the visualization:
 | Other | Any other valid code | `#aaaaaa` |
 | Unknown | Empty or invalid weather code | `#cccccc` |
 
+
+The graph opens an interactive Matplotlib window with:
+
+* temperature chart
+* wind speed chart
+* weather category labels
+* daily and full-dataset category counts
+* previous/next date buttons
+* date input
+* save button
+
 ## Setup
 
 ```bash
@@ -107,37 +115,7 @@ python src/visualize_weather_graph.py
 
 ```
 
-The graph opens an interactive Matplotlib window with:
-
-* temperature chart
-* wind speed chart
-* weather category labels
-* daily and full-dataset category counts
-* previous/next date buttons
-* date input
-* save button
-
-Saved figures are written to `figures/`.
-
-## Generated Figures
-
-
-Four colorful daily examples with frequent weather and wind changes:
-
-| Winter - Mixed | Spring - Mixed |
-| --- | --- |
-| ![Winter mixed weather chart](figures/baku_winter_variable_2021-12-25.png) | ![Spring mixed weather chart](figures/baku_spring_variable_2017-05-15.png) |
-| Summer - Mixed | Autumn - Mixed |
-| ![Summer mixed weather chart](figures/baku_summer_variable_2024-07-02.png) | ![Autumn mixed weather chart](figures/baku_autumn_variable_2018-11-09.png) |
-
-Default start date example:
-
-![Default start date weather chart](figures/baku_weather_2025-01-13.png)
 
 ## Data Source
 
 Weather data is fetched from the Open-Meteo Archive API using Baku coordinates.
-
-```
-
-```
