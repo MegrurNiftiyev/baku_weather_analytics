@@ -1,6 +1,6 @@
-# Baku Yearly Weather Graph
+# Baku Weather Analytics 2015-2025
 
-Standalone weather-data project for Baku, Azerbaijan. It includes a weather dataset, a data-generation script that can fetch archive weather data from Open-Meteo, and an interactive daily weather graph.
+Standalone hourly weather-data project for Baku, Azerbaijan, covering the `2015-01-01` to `2025-12-31` period. It includes the dataset, a data-generation script that can fetch archive weather data from Open-Meteo, and an interactive daily weather graph.
 
 # Links
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MegrurNiftiyev/baku_weather_analytics)
@@ -29,12 +29,8 @@ baku_hourly_weather_2015_2025/
     `-- visualize_weather_graph.py
 
 ```
-## Figures
-
-Saved figures are written to `figures/`.
 
 ## Generated Figures
-
 
 Four colorful daily examples with frequent weather and wind changes:
 
