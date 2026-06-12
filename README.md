@@ -38,11 +38,28 @@ Saved figures are written to `figures/`.
 
 Four colorful daily examples with frequent weather and wind changes:
 
-| Winter | Spring |
-| --- | --- |
-| ![Winter mixed weather chart](figures/baku_winter_variable_2021-12-25.png) | ![Spring mixed weather chart](figures/baku_spring_variable_2017-05-15.png) |
-| Summer | Autumn |
-| ![Summer mixed weather chart](figures/baku_summer_variable_2024-07-02.png) | ![Autumn mixed weather chart](figures/baku_autumn_variable_2018-11-09.png) |
+<table>
+  <tr>
+    <td>
+      <strong>Winter</strong><br>
+      <img src="figures/baku_winter_variable_2021-12-25.png" alt="Winter mixed weather chart" width="420" style="margin-right: 5px;">
+    </td>
+    <td>
+      <strong>Spring</strong><br>
+      <img src="figures/baku_spring_variable_2017-05-15.png" alt="Spring mixed weather chart" width="420" style="margin-right: 5px;">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Summer</strong><br>
+      <img src="figures/baku_summer_variable_2024-07-02.png" alt="Summer mixed weather chart" width="420" style="margin-right: 5px;">
+    </td>
+    <td>
+      <strong>Autumn</strong><br>
+      <img src="figures/baku_autumn_variable_2018-11-09.png" alt="Autumn mixed weather chart" width="420" style="margin-right: 5px;">
+    </td>
+  </tr>
+</table>
 
 
 ## Dataset
