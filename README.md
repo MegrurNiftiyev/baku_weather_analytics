@@ -115,9 +115,17 @@ The graph opens an interactive Matplotlib window with:
 
 ```bash
 git clone https://github.com/MegrurNiftiyev/baku_weather_analytics.git
-cd baku_weather_analytics
+```
+
+```bash
 pip install -r requirements.txt
+```
+
+```bash
 python src/generate_weather_data.py
+```
+
+```bash
 python src/visualize_weather_graph.py
 ```
 
