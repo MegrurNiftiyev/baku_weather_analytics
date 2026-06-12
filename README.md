@@ -2,7 +2,6 @@
 license: mit
 task_categories:
 - time-series-forecasting
-- data-visualization
 tags:
 - weather
 - baku
@@ -11,7 +10,7 @@ size_categories:
 - 10k-100k
 pretty_name: Baku Hourly Weather Data (2015-2025)
 configs:
-- caption_config: default
+- config_name: default
   data_files:
   - split: train
     path: data/baku_weather_hourly_data.csv
